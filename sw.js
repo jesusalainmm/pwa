@@ -4,6 +4,7 @@ var urlsToCache = [
   './css/bootstrap.min.css',
   './css/one-page-wonder.css',
   './js/app.js',
+  './img/icons/pwamola.png',
   './img/01.jpg',
   './img/02.jpg',
   './img/03.jpg',
@@ -30,7 +31,7 @@ self.addEventListener('install', e => {
       })
       .catch(err => console.log('Falló registro de cache', err))
   )
-})
+});
 
 //una vez que se instala el SW, se activa y busca los recursos para hacer que funcione sin conexión
 self.addEventListener('activate', e => {
@@ -51,9 +52,26 @@ self.addEventListener('activate', e => {
       // Le indica al SW activar el cache actual
       .then(() => self.clients.claim())
   )
-})
+});
 
 //cuando el navegador recupera una url
+self.addEventListener("fetch", e => {
+  if (e.request.url === "https://lagranopticacolombia.com/pwa/") {
+      // or whatever your app's URL is
+      e.respondWith(
+          fetch(e.request).catch(err =>
+              self.cache.open(CACHE_NAME).then(cache => cache.match("./index.html"))
+          )
+      );
+  } else {
+      e.respondWith(
+          fetch(e.request).catch(err =>
+              caches.match(e.request).then(response => response)
+          )
+      );
+  }
+});
+/*
 self.addEventListener('fetch', e => {
   //Responder ya sea con el objeto en caché o continuar y buscar la url real
   e.respondWith(
@@ -68,3 +86,4 @@ self.addEventListener('fetch', e => {
       })
   )
 })
+*/
