@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Projection Life</title>
+    <meta name="description" content="Projection Life de Colombia">
+    <meta name="author" content="Jesus Alain Gonzalez Espinosa">  
+    <meta name="theme-color" content="#F0DB4F">
+    <meta name="MobileOptimized" content="width">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <link rel="shortcut icon" type="image/png" href="./img/icons/pwamola.png">
+    <link rel="apple-touch-icon" href="./img/icons/pwamola.png">
+    <link rel="apple-touch-startup-image" href="./img/icons/pwamola.png">
+    <link rel="manifest" href="./manifest.json">
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.21/css/dataTables.bootstrap4.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.2.5/css/responsive.bootstrap4.min.css">
+  
+    <!-- Custom styles for this template -->
+    <link href="css/one-page-wonder.css" rel="stylesheet">
+
+    
+  </head>
+
+  <body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">Projection Life</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Sign Up</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Log In</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <header class="masthead text-center text-white">
+      <div class="masthead-content">
+        <div class="container">
+          <h1 class="masthead-heading mb-0">Projection Life</h1>
+          <h2 class="masthead-subheading mb-0">Encuesta Covid</h2>
+        </div>
+      </div>
+    </header>
+
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 col-12">
+              <div class="form-group">
+              <label>Tipo de Documento</label>
+              <select class="form-control" id="tipo_id">
+                <option>CC</option>
+                <option>TI</option>
+                <option>RC</option>
+                <option>CE</option>
+                <option>NIT</option>
+                <option>PE</option>
+                <option>ME</option>
+              </select>
+              </div><!--  class="form-group"  -->
+          </div><!--  class="col-xl-3 col-lg-6 col-md-6 col-sm-12 col-12"  -->          
+      
+          <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 col-12">
+                <div class="form-group">
+                <label>Documento</label>
+                <input type="number" class="form-control" name="numero_id" id="numero_id" value="" />
+                </div><!--  class="form-group"  -->
+            </div><!--  class="col-xl-3 col-lg-6 col-md-6 col-sm-12 col-12"  -->          
+        
+            <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 col-12">
+                <div class="form-group">
+                <label>Primer Nombre</label>
+                <input type="number" class="form-control" name="1_nombre" id="1_nombre" value="" />
+                </div><!--  class="form-group"  -->
+            </div><!--  class="col-xl-3 col-lg-6 col-md-6 col-sm-12 col-12"  -->          
+        
+            <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 col-12">
+                <div class="form-group">
+                <label>Segundo Nombre</label>
+                <input type="number" class="form-control" name="2_nombre" id="2_nombre" value="" />
+                </div><!--  class="form-group"  -->
+            </div><!--  class="col-xl-3 col-lg-6 col-md-6 col-sm-12 col-12"  -->          
+        
+            <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 col-12">
+                <div class="form-group">
+                <label>Primer Apellido</label>
+                <input type="number" class="form-control" name="1_apellido" id="1_apellido" value="" />
+                </div><!--  class="form-group"  -->
+            </div><!--  class="col-xl-3 col-lg-6 col-md-6 col-sm-12 col-12"  -->          
+        
+            <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 col-12">
+              <div class="form-group">
+              <label>Segundo Apellido</label>
+              <input type="number" class="form-control" name="2_apellido" id="2_apellido" value="" />
+              </div><!--  class="form-group"  -->
+            </div><!--  class="col-xl-3 col-lg-6 col-md-6 col-sm-12 col-12"  -->          
+        
+            <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 col-12">
+                <div class="form-group">
+                <label>Genero</label>
+                <input type="number" class="form-control" name="genero" id="genero" value="" />
+                </div><!--  class="form-group"  -->
+            </div><!--  class="col-xl-3 col-lg-6 col-md-6 col-sm-12 col-12"  -->          
+            
+            <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 col-12">
+                <div class="form-group">
+                <label>Fecha de Nacimiento</label>
+                <input type="date" class="form-control" name="fecha_nac" id="fecha_nac" value="" />
+                </div><!--  class="form-group"  -->
+            </div><!--  class="col-xl-3 col-lg-6 col-md-6 col-sm-12 col-12"  -->          
+        
+            <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 col-12">
+                <div class="form-group">
+                <label>EPS</label>
+                <input type="number" class="form-control" name="eps_pac" id="eps_pac" value="" />
+                </div><!--  class="form-group"  -->
+            </div><!--  class="col-xl-3 col-lg-6 col-md-6 col-sm-12 col-12"  -->          
+                
+            <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 col-12">
+                <div class="form-group">
+                <label>Direccion</label>
+                <input type="number" class="form-control" name="direccion" id="direccion" value="" />
+                </div><!--  class="form-group"  -->
+            </div><!--  class="col-xl-3 col-lg-6 col-md-6 col-sm-12 col-12"  -->          
+                  
+            <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 col-12">
+              <div class="form-group">
+              <label>Barrio</label>
+              <input type="number" class="form-control" name="barrio" id="barrio" value="" />
+              </div><!--  class="form-group"  -->
+            </div><!--  class="col-xl-3 col-lg-6 col-md-6 col-sm-12 col-12"  -->          
+                  
+            <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 col-12">
+              <div class="form-group">
+              <label>Telefonos</label>
+              <input type="number" class="form-control" name="cel_paciente" id="cel_paciente" value="" />
+              </div><!--  class="form-group"  -->
+            </div><!--  class="col-xl-3 col-lg-6 col-md-6 col-sm-12 col-12"  -->                        
+        </div>
+        <div class="row">
+          <div class="col-md-4 offset-md-4 col-sm-8 offset-sm-2">
+            <button type="button" class="btn btn-block btn-info">Guardar</button>
+          </div>
+        </div>
+      </div>
+    </section>
+<br>
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+              <div class="card">
+                  <div class="card-body">
+                      <table id="tabla" class="table table-striped table-bordered dt-responsive nowrap" style="width:100%">
+                          <thead>
+                              <tr>
+                                  <th>Id</th>
+                                  <th>Nombre</th>
+                                  <th>Direccion</th>
+                                  <th>Telefono</th>                
+                              </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>Id</td>
+                              <td>Nombre</td>
+                              <td>Direccion</td>
+                              <td>Telefono</td>                
+                            </tr>                      
+                          </tbody>
+                      </table>
+                  </div><!-- /.card-body -->
+              </div><!-- /.card -->
+          </div><!-- /.col -->
+      </div><!-- /.row -->
+    </section>
+    <!-- Footer -->
+    <footer class="py-5 bg-black">
+      <div class="container">
+        <p class="m-0 text-center text-white small">Copyright &copy; <script type="text/javascript"> document.write(new Date().getFullYear()); </script></p>
+      </div>
+      <!-- /.container -->
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.21/js/dataTables.bootstrap4.min.js"></script>
+    <script src="https://cdn.datatables.net/responsive/2.2.5/js/dataTables.responsive.min.js"></script>
+    <script src="https://cdn.datatables.net/responsive/2.2.5/js/responsive.bootstrap4.min.js"></script>
+    <script>
+      $(function () {
+        $('#tabla').DataTable({
+          "paging": true,
+          "lengthChange": false,
+          "searching": false,
+          "ordering": true,
+          "info": false,
+          "autoWidth": true,
+          "responsive": true,
+          "iDisplayLength": 100,
+          "order": [[ 0, "desc" ]],
+          "language": {
+            "emptyTable":			"No hay datos disponibles en la tabla.",
+            "info":		   			"Del _START_ al _END_ de _TOTAL_ ",
+            "infoEmpty":			"Mostrando 0 registros de un total de 0.",
+            "infoFiltered":			"(filtrados de un total de _MAX_ registros)",
+            "infoPostFix":			"(actualizados)",
+            "lengthMenu":			"Mostrar _MENU_ registros",
+            "loadingRecords":		"Cargando...",
+            "processing":			"Procesando...",
+            "search":				"Buscar:",
+            "searchPlaceholder":	"Datos para buscar",
+            "zeroRecords":			"No se han encontrado coincidencias.",
+            "paginate": {
+              "first":			"Primera",
+              "last":				"Última",
+              "next":				"Siguiente",
+              "previous":			"Anterior"
+            },
+            "aria": {
+              "sortAscending":	"Ordenación ascendente",
+              "sortDescending":	"Ordenación descendente"
+            }
+          }
+        });
+        $('select, input[type="search"]').removeClass('form-control form-control-sm').addClass('form-control input-lg');
+     
+        var table = $('#tabla').DataTable();
+        table.columns( '.all' ).visible( true );    
+      });
+    </script>
+    
+    
+    <script src="js/navbar.js"></script>
+    <script src="js/app.js"></script>
+
+  </body>
+
+</html>
