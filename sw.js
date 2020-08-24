@@ -55,21 +55,12 @@ self.addEventListener('activate', e => {
 });
 
 //cuando el navegador recupera una url
-self.addEventListener("fetch", e => {
-  if (e.request.url === "https://lagranopticacolombia.com/pwa/") {
-      // or whatever your app's URL is
-      e.respondWith(
-          fetch(e.request).catch(err =>
-              self.cache.open(CACHE_NAME).then(cache => cache.match("./index.html"))
-          )
-      );
-  } else {
-      e.respondWith(
-          fetch(e.request).catch(err =>
-              caches.match(e.request).then(response => response)
-          )
-      );
-  }
+self.addEventListener("fetch", function(event) {
+  event.respondWith(
+    caches.match(event.request).then(function(response) {
+      return response || fetch(event.request);
+    })
+  );
 });
 /*
 self.addEventListener('fetch', e => {
